@@ -1,0 +1,22 @@
+firefox-fact-checker/
+├── README.md                  how to run it, what it found
+├── CLAUDE.md                  the agent's rulebook (always loaded)
+├── CHANGELOG.md               every rule change and why
+├── decisions.md               why the project is built this way
+├── CONTENT-LICENSE.md         credit to Mozilla (CC BY-SA)
+├── .claude/
+│   └── skills/
+│       └── fact-check/
+│           └── SKILL.md       the step-by-step job
+├── tools/
+│   ├── fetch-article.md       how to read a help article
+│   └── release-notes.md       how to find and read release notes
+├── evals/
+│   ├── articles/
+│   │   ├── original/          unchanged copies of 15 articles
+│   │   └── test/              the same 15, 10 with a planted error
+│   ├── answer-key.md          what was planted, where, and the proof
+│   ├── rubric.md              how each result is scored
+│   ├── runs/                  saved agent reports, one folder per version
+│   └── findings.md            why each miss happened
+└── reports/                   reports on real, unplanted articles
